@@ -3,42 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="Css/style.css">
 </head>
 <body>
-  <form action="https://formspree.io/d0fd27c406@mailox.biz"
-      method="POST" class="post">
-       
-        <label for="firstName">Imię:</label>
-        <input type="text" name="firstName" id="firstName">
-       
-        <label for="lastName">Nazwisko:</label>
-        <input type="text" name="lastName" id="lastName">
-        
-        <label for="email">Adres email:</label>
-        <input type="email" name="mail" id="email">
-        
-        <label for="phone">Numer telefonu:</label>
-        <input type="text" name="phone" id="phone">
-        
-        <label for="city">Miasto:</label>
-        <select name="city" id="city">
-            <option value="Kraków">Kraków</option>
-            <option value="Warszawa">Warszawa</option>
-            <option value="Gdańsk">Gdańsk</option>
-        </select>
-        
-        <label for="gender">Płeć:</label>
-        <input type="radio" name="gender" id="gender" value="Mężczyzna">Mężczyzna
-        <input type="radio" name="gender" id="gender" value="Kobieta">Kobieta
-        
-        <label for="agreement">Zgoda na przetwarzanie danych osobowych</label>
-        <input type="checkbox" name="agreement" id="agreement">
+     <div class="box">
+         <h1>Formularz kontaktowy</h1>
+         
+         <form action="https://formspree.io/e2c8b39990@mailox.biz"
+              method="POST" class="post">
 
-        <label for="message">Wiadomość</label>
-        <textarea name="message" id="message" maxlength="1000" cols="30" rows="10"></textarea>
-        
-        <input type="submit" value="Wyślij">
-        
-    </form>
+                <label for="firstName">
+                    <span>Imię: </span>
+                    <input type="text" name="firstName" id="firstName">
+                </label>
+               
+                <label for="lastName">
+                    <span>Nazwisko: </span>
+                    <input type="text" name="lastName" id="lastName">
+                </label>
+
+                <label for="mail">
+                    <span>Adres email: </span> 
+                    <input type="email" name="mail" id="email">
+                </label>
+
+                <label for="phone">
+                    <span>Numer telefonu: </span>
+                    <input type="text" name="phone" id="phone">
+                </label>
+
+                <label for="city">
+                    <span>Miasto: </span>
+                    <select name="city" id="city">
+                        <option value="Kraków">Kraków</option>
+                        <option value="Warszawa">Warszawa</option>
+                        <option value="Gdańsk">Gdańsk</option>
+                    </select>
+                </label>
+
+                <label>
+                    <span>Płeć: </span>
+                    <span>Mężczyzna  <input type="radio" name="gender" id="male" value="Mężczyzna"></span> 
+                    <span>Kobieta  <input type="radio" name="gender" id="female" value="Kobieta"></span>
+                </label>
+                
+                <label class="myChecbox" for="agreement">
+                    <span>Zgoda na przetwarzanie danych osobowych</span>
+                    <input type="checkbox" name="agreement" id="agreement">
+                </label>
+
+                <label for="message">
+                    <span>Wiadomość</span>
+                    <textarea name="message" id="message" maxlength="1000" cols="30" rows="10"></textarea>
+                </label>
+
+                <input type="submit" value="Wyślij">  
+        </form>
+     </div>
 </body>
 </html>
