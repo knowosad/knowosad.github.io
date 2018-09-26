@@ -1,55 +1,21 @@
 
-		body { 
-			font: 100% normal Arial, Helvetica, sans-serif; 
-			background: white;
-		}
-		form, input, select, textarea {
-			margin:0; 
-			padding:0; 
-			color:black;
-		}
-
-        radio {
-            width:100%;
-            float:left;
-        }
- 
-		div.box {
-			margin:0 auto;
+        div.box {
+            margin:0 auto;
 			width:500px;
 			background: silver;
 			position:relative;
 			top:50px;
-		}
- 
-		h1 { 
-            text-align: center;
-			color:#ffffff;
-			font-size:18px;
-			text-transform:uppercase;
-			padding:5px 0 5px 5px;
-		}
- 
+		}		
+
 		label {
 			width:100%;
-			display: block;
-			background:grey;
-        
+			display: block;        
 			padding:10px 0 10px 0;
 		}
  
 		label span {
-			display: block;
-			color:whitesmoke;
-			font-size:13px;
-			float:left;
-			width:100px;
-			text-align:right;
-			padding:5px 20px 0 0;
+			display: inline-block;
 		}
         
-        label.myChecbox {
-            float: left;
-        }
         
 }
