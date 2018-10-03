@@ -16,6 +16,11 @@
 		label span {
 			display: inline-block;
 		}
+
+        input:focus{
+            background: black;
+            color: red;
+        }
         
         
 }
